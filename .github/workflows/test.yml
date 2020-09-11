@@ -17,4 +17,3 @@ jobs:
         # Only needed for private caches
         #authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     - run: nix-build ./release.nix --attr application
-    - run: nix-shell --run "echo OK"
